@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusão In Foco</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essas class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="./img/logo-infoco-redondo.png" alt="imagem da logomarca"> Blog In Foco 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="about-menu" href="#">Sobre Mim</a>
+            <a class="nav-item nav-link" id="services-menu" href="#">Blog</a>
+            <a class="nav-item nav-link" id="portfolio-menu" href="#">In Foco</a>
+            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+            <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+           </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+
+            <!-- tirar classe d-none -->
+
+            <div class="carousel-caption d-md-block">
+              <h2></h5>
+              <p></p>
+              <a href="./index.html" class="main-btn">Clique aqui!</a>
+              <br>
+              <br>
+              <br>
+              <h3>Envie sua mensagem</h3>
+            </div>
+            
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner2.jpg" class="d-block w-100" alt="Engenharia de software">
+            <div class="carousel-caption d-md-block">
+              <h2></h5>
+              <p></p>
+              <a href="mailto:alexsa.tavares@gmail.com" class="main-btn">Entre em contato</a></p>
+              <h3>Envie sua mensagem</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner3.jpg" class="d-block w-100" alt="Manutenção em software">
+            <div class="carousel-caption d-md-block">
+              <h2></h5>
+              <p></p>
+              <a href="mailto:alexsa.tavares@gmail.com" class="main-btn">Clique aqui! Entre em contato</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Sobre a empresa -->
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Sobre Mim</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="./img/perfil-sobre.jpg" alt="Imagem de uma pessoa "style=" width: 900px; height: auto;">
+              </div>
+              <div class="col-md-6" style="text-align: justify;">
+                <h3 class="about-title">Olá! sou a Alexsandra Silva</h3>
+                <br>
+                <p style="text-align: justify;">Atualmente, estou cursando Sistemas de Informação e MBA em Engenharia de Software em Recife, Pernambuco, enquanto faço uma transição de carreira para a área de TI.</p>
+                <p style="text-align: justify;">Concluir cursos de programação e participar do programa [Elas na_tech] 2023 tem sido fundamental para superar desafios comuns enfrentados por mulheres nesse campo.</p>
+                <p style="text-align: justify;">Minha formação em Pedagogia, Psicopedagogia e Neuropsicopedagogia complementa meu conhecimento. Também sou voluntária na mentoria de carreiras de Soft Skills, visando o crescimento pessoal e profissional das pessoas.</p>
+                <br>
+                <br>
+                <div class="two-columns">
+                  <ul id="about-list">
+                    <li><i class="fas fa-check"></i> Web Full Stack</li>
+                    <li><i class="fas fa-check"></i> Business Agility</li>
+                    <li><i class="fas fa-check"></i> Metodologias Ágeis</li>
+                    <li><i class="fas fa-check"></i> Tecnologia Assistiva</li>
+                  </ul>
+                  <div class="clear"></div>
+                  <ul id="about-list">
+                    <li><i class="fas fa-check"></i> Psicopedagoga</li>
+                    <li><i class="fas fa-check"></i> Neuropsicopedagoga</li>
+                    <li><i class="fas fa-check"></i> Pedagoga Empresarial</li>
+                    <li><i class="fas fa-check"></i> Engenharia de Software</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Serviços Inclusão In Foco -->
+      <div id="services-area">
+        <div class="in-foco"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title"> <strong>Blog Inclusão In Foco</strong></h3>
+              <p>Encontre aqui informações sobre Inclusão Social e Tecnologia</p>
+            </div>
+      
+    <div class="container">
+      <!---card 1 !--->
+      <div class="card card-1">
+          <!---card-header--->
+          <div class="card-header">
+              <img src="./img/card4.jpg"  width="269" height="180" alt="">
+          </div>
+          <!---card-header--->
+
+          <!---card-body--->
+          <div class="card-body">
+              <h3 class="card-subtitulo">Lei 14.624 17/07/2023</h3>
+              <h2 class="card-titulo">Deficiências Ocultas</h2>
+              <p class="card-texto">
+                  Símbolo nacional de identificação de pessoas com deficiências ocultas
+              </p>
+          </div>
+          <!---card-body--->
+
+          <!---card-footer--->
+          <div class="card-footer">
+              <a href="./sabermais.html">Saber Mais</a>
+          </div>
+          <!---card-footer--->
+          </div>
+          <!---Fim card 1-->
+
+          <!---card 2 !--->
+      <div class="card card-2">
+          <!---card-header--->
+          <div class="card-header">
+              <img src="./img/card7.jpg" width="265" height="180" alt="">
+          </div>
+          <!---card-header--->
+
+          <!---card-body--->
+          <div class="card-body">
+              <h3 class="card-subtitulo">Pessoas com deficiências</h3>
+              <h2 class="card-titulo">Oculta</h2>
+              <p class="card-texto">
+                  O cordão de Girassol alerta para as necessidades de assitência especial. 
+              </p>
+          </div>
+          <!---card-body--->
+
+          <!---card-footer--->
+          <div class="card-footer">
+              <a href="./sabermais.html">Saber Mais</a>
+          </div>
+          <!---card-footer--->
+          </div>
+          <!---Fim card 2-->
+
+          <!---card 3 !--->
+      <div class="card card-3">
+          <!---card-header--->
+          <div class="card-header">
+              <img src="./img/card6.jpg" width="274" height="180" alt="">
+          </div>
+          <!---card-header--->
+
+          <!---card-body--->
+          <div class="card-body">
+              <h3 class="card-subtitulo">Cordão de Girrasol</h3>
+              <h2 class="card-titulo">Quem pode usar?</h2>
+              <p class="card-texto">
+                  Pessoas com deficiência oculta, como autismo, TDAH entre outras
+              </p>
+          </div>
+          <!---card-body--->
+
+          <!---card-footer--->
+          <div class="card-footer">
+              <a href="./sabermais.html">Saber Mais</a>
+          </div>
+          <!---card-footer--->
+          </div>
+          <!---Fim card 3-->
+          </div>
+       </div>
+  </div>
+  <!-- Projetos -->
+  <div id="portfolio-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="main-title"> <strong>Informativo In Foco</strong></h3>
+          <p>Conheça um pouco sobre as deficiências ocultas - tecnologia assistiva e inovação social</p>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-12" id="filter-btn-box">
+          <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+          <button class="main-btn filter-btn" id="dev-btn">Tecnologia Assistiva</button>
+          <button class="main-btn filter-btn" id="dsg-btn">Transtornos</button>
+          <button class="main-btn filter-btn" id="seo-btn">Fique Sabendo</button>
+        </div>
+        <div class="col-md-4 project-box dev">
+          <img src="./img/techassistiva1.jpg" class="img-fluid" alt="Tecnologia Assitiva Info 5">
+        </div>
+        <div class="col-md-4 project-box dsg">
+          <img src="./img/trans2.jpg" class="img-fluid" alt="Síndrome de Tourett Info 6">
+        </div>
+        <div class="col-md-4 project-box seo">
+          <img src="./img/fiquesabendo3.jpg" class="img-fluid" alt="Diferença Dislexia e TDHA Info 1">
+        </div>
+        <div class="col-md-4 project-box dev">
+          <img src="./img/techassistiva2.jpg" class="img-fluid" alt="Tecnologia Assitiva Info 4">
+        </div>
+        <div class="col-md-4 project-box dsg">
+          <img src="./img/trans1.jpg" class="img-fluid" alt="Tipode TDHA Info 5">
+        </div>
+        <div class="col-md-4 project-box seo">
+          <img src="./img/fiquesabendo4.png" class="img-fluid" alt="Avaliação Neuropsicopedagogica - Info 6">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Dados da empresa -->
+      <div id="data-area">
+        <div class="servicos">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 circle-box" id="circleA">
+              <div id="circleA"></div>
+              <p>Projetos realizados</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box" id="circleB">
+              <div id="circleB"></div>
+              <p>Ideias Surreais</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box" id="circleC">
+              <div id="circleC"></div>
+              <p>Horas</p>
+            </div>  
+            <div class="col-md-3 col-xs-6 circle-box" id="circleD"> 
+              <div id="circleD"></div>
+              <p>Cafezinhos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Experiência Profissional -->
+      
+      <!-- Projetos -->
+      
+      <!-- Newsletter -->
+      <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine a lista de e-mails, e receba os conteúdos sobre tecnologia inclusiva.</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
+        </div>
+      </div>
+      <!-- Call to Action -->
+      <div id="call-area">
+        <div class="container">
+            <div class="row">
+              <p>Faça sua doação! A futura ONG - Inclusão In Foco precisa da sua doação para continuar com os projetos de inclusão social"</p>
+              <button class="main-btn" id="call-btn">QUERO DOAR</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Vamos conversar?</h3>
+              <p>Ficarei feliz em contribuir para a inclusão assistiva e tecnológica, tornando nosso mundo um lugar melhor.</p>
+              <br>
+              <br>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <a href="https://api.whatsapp.com/send?phone=5581992897193" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp whatsapp"></i> Chamada ou WhatsApp
+              </a>
+            </div>            
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> alexsa.neuropsicoped@gmail.com | alexsa.tecnolog@gmail.com</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Localização:</span> Recife | Pernambuco | Brasil</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Ou deixe uma mensagem:</p>
+            </div>           
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <input type="submit" class="main-btn">
+              </form>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <a href="https://github.com/alexsabrasil" target="_blank" class="fab fa-github"></a>
+              <a href="https://www.linkedin.com/in/alexsatecnolog/" target="_blank" class="fab fa-linkedin"></a>
+              <a href="https://www.instagram.com/alexsa.tech/" target="_blank" class="fab fa-instagram"></a>
+              <!-- Ícone personalizado do Replit -->
+              <a href="https://replit.com/@alexsabrasil" target="_blank" rel="noopener noreferrer">
+              <img src="./img/logo-replit.png" width="27" alt="Replit">
+              </a>
+              <p>&copy; 2023 | Desenvolvido por <span>Alexsandra Silva</span></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Reset de margens e preenchimentos para eliminar espaçamentos padrão */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0; 
+    justify-content: center;
+    align-items: center;   
+}
+
+/* Estilo global para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte padrão */
+    background-color: #f8f8f8; /* Cor de fundo da página */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    padding: 30px 0; /* Espaçamento interno para o cabeçalho */
+}
+
+#logo {
+    max-width: 150px; /* Tamanho máximo do logotipo */
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Estilo para a navegação */
+.navbar {
+    padding: 0 20px; /* Espaçamento interno para a barra de navegação */
+}
+
+.nav-link {
+    color: #fff; /* Cor dos links */
+    margin-right: 20px; /* Espaçamento direito entre os links */
+}
+
+/* Estilos personalizados para aumentar o tamanho dos links */
+.navbar-nav .nav-item.nav-link {
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme desejado */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 170px; /* Espaçamento interno para o conteúdo principal */
+}
+
+/* Estilo para o título principal */
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px; /* Espaçamento inferior para separar do conteúdo */
+}
+
+/* Estilo para parágrafos */
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Espaçamento inferior para separar os parágrafos */
+}
+
+/* Estilo para as imagens */
+.image {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento inferior para separar as imagens */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-section {
+    text-align: justify;
+    
+}
+
+.image-section {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.image-section p {
+    text-align: justify;
+    margin: 100px;
+}
+
+/* efeitos nas imagens section */
+
+.image-section {
+    width: 800px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+/* Estilo para o formulário de inscrição na newsletter */
+#news-area {
+    background-color: #333; /* Cor de fundo da área de notícias */
+    color: #fff; /* Cor do texto na área de notícias */
+    padding: 40px 0; /* Espaçamento interno para a área de notícias */
+}
+
+#email-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#news-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5733; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para a área de chamada para ação */
+#call-area {
+    background-color: #333; /* Cor de fundo da área de chamada para ação */
+    color: #fff; /* Cor do texto na área de chamada para ação */
+    padding: 40px 0; /* Espaçamento interno para a área de chamada para ação */
+}
+
+#call-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5733; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center;
+    padding: 40px 0; /* Espaçamento interno para o rodapé */
+}
+
+footer p {
+    margin-top: 40px;
+}
+/* Estilo para os ícones de mídia social no rodapé */
+.fab {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff; /* Cor dos ícones de mídia social */
+}
+
+/* Estilo para o link personalizado do Replit no rodapé */
+#copy-area a[href*="replit.com"] {
+    margin-left: 10px;
+}
+
+/* Estilo para o link do desenvolvedor no rodapé */
+#copy-area span {
+    font-weight: bold;
+}
+
+/* Estilos para telas maiores (largura mínima de 992 pixels) */
+@media (min-width: 992px) {
+    body {
+        background-color: #f0f0f0; /* Altere a cor de fundo para telas maiores */
+    }
+
+    header {
+        padding: 20px; /* Aumente o preenchimento do cabeçalho para telas maiores */
+    }
+}
+
+/* Estilos para telas menores (largura máxima de 768 pixels) */
+@media (max-width: 768px) {
+    body {
+        background-color: #fff; /* Altere a cor de fundo para telas menores */
+    }
+
+    header {
+        padding: 10px; /* Reduza o preenchimento do cabeçalho para telas menores */
+    }
+}
