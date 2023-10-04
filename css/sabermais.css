@@ -1,18 +1,19 @@
 /* Estilo global para o corpo da página */
 body {
-    font-family: 'Roboto', sans-serif; /* Fonte padrão */
-    background-color: #f8f8f8; /* Cor de fundo da página */
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f8f8f8; 
 }
 
 /* Estilo para o cabeçalho */
 header {
-    background-color: #333; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto do cabeçalho */
-    padding: 9px 0; /* Espaçamento interno para o cabeçalho */
+    background-color: #333; 
+    color: #fff; 
+    padding: 9px 0; 
 }
 
 #logo {
-    max-width: 100px; /* Tamanho máximo do logotipo */
+    max-width: 100px;
+    width: 80px; 
 }
 
 .navbar-brand {
@@ -23,67 +24,67 @@ header {
 
 /* Estilo para a navegação */
 .navbar {
-    padding: 0 20px; /* Espaçamento interno para a barra de navegação */
+    padding: 0 20px; 
 }
 
 .nav-link {
-    color: #fff; /* Cor dos links */
-    margin-right: 20px; /* Espaçamento direito entre os links */
+    color: #fff; 
+    margin-right: 20px; 
 }
 
 /* Estilos personalizados para aumentar o tamanho dos links */
 .navbar-nav .nav-item.nav-link {
-    font-size: 20px; /* Ajuste o tamanho da fonte conforme desejado */
+    font-size: 20px; 
 }
 
 /* Estilos para a seção de texto */
 .text-section {
-    margin: 20px; /* Espaçamento entre as seções */
-    text-align: justify; /* Justifica o texto */
+    margin: 20px; 
+    text-align: justify; 
 }
 
 /* Estilos para o título da seção */
 .text-section h1 {
-    font-size: 24px; /* Tamanho da fonte do título */
-    margin-bottom: 10px; /* Espaçamento inferior para separar o título */
+    font-size: 18px; 
+    margin-bottom: 10px; 
 }
 
 /* Estilos para os parágrafos de texto */
 .text-section p {
-    font-size: 16px; /* Tamanho da fonte dos parágrafos */
-    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
-    margin-bottom: 20px; /* Espaçamento inferior para separar os parágrafos */
+    font-size: 13px; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
 }
 
 /* Estilos para todas as seções de imagem */
 .image-section {
-    margin: 20px; /* Espaçamento entre as seções */
-    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px; 
+    text-align: center; 
 }
 
 /* Estilos para os títulos das seções */
 .image-section h1, .image-section h2 {
-    font-size: 24px; /* Tamanho da fonte dos títulos */
-    margin-bottom: 10px; /* Espaçamento inferior para separar os títulos */
+    font-size: 24px; 
+    margin-bottom: 10px; 
 }
 
 /* Estilos para as imagens */
 .image img {
-    max-width: 100%; /* A imagem deve se ajustar à largura da tela */
-    height: auto; /* A altura da imagem deve ser ajustada automaticamente */
-    margin-bottom: 10px; /* Espaçamento inferior para separar as imagens */
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 /* Estilos para os parágrafos de texto */
 .image p {
-    font-size: 12px; /* Tamanho da fonte dos parágrafos */
-    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
-    margin-bottom: 20px; /* Espaçamento inferior para separar os parágrafos */
+    font-size: 12px; 
+    line-height: 1.5; 
+    margin-bottom: 20px; 
 }
 
 /* Estilos para os subtítulos (h2) */
 .image-section h2 {
-    font-size: 20px; /* Tamanho da fonte dos subtítulos */
+    font-size: 20px; 
 }
 
 .container {
@@ -107,7 +108,7 @@ header {
 }
 
 .image-section:hover {
-    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+    transform: scale(1.05); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -129,13 +130,12 @@ header {
     margin-bottom: 10px;
 }
 
-
 /* Estilo para o rodapé */
 footer {
-    background-color: #333; /* Cor de fundo do rodapé */
-    color: #fff; /* Cor do texto no rodapé */
+    background-color: #333; 
+    color: #fff; 
     text-align: center;
-    padding: 40px 0; /* Espaçamento interno para o rodapé */
+    padding: 40px 0; 
 }
 
 footer p {
@@ -145,7 +145,7 @@ footer p {
 .fab {
     font-size: 24px;
     margin-right: 10px;
-    color: #fff; /* Cor dos ícones de mídia social */
+    color: #fff; 
 }
 
 /* Estilo para o link personalizado do Replit no rodapé */
@@ -158,8 +158,7 @@ footer p {
     font-weight: bold;
 }
 
-
-/* Estilos para telas pequenas (móveis e tablets) */
+/* estrutura Responsiva */
 @media (max-width: 767px) {
     .text-section {
         padding: 20px;
@@ -167,34 +166,30 @@ footer p {
     
     /* Ajuste o tamanho da fonte e espaçamento para telas pequenas */
     .text-section p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.4;
         margin-bottom: 10px;
     }
 
     /* Ajuste o tamanho da fonte do título para telas pequenas */
     .text-section h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
-}
 
-/* Estilos para telas pequenas (móveis e tablets) */
-@media (max-width: 767px) {
+    /* Estilos para seções de imagem em telas pequenas */
     .image-section {
         padding: 20px;
     }
 
-    .image h1 {
-        font-size: 24px; /* Ajuste o tamanho da fonte do título para telas pequenas */
-    }
-
+    /* Ajuste o tamanho da fonte e espaçamento para telas pequenas */
     .image p {
-        font-size: 16px; /* Ajuste o tamanho da fonte do texto para telas pequenas */
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 10px;
     }
 
-    .image img {
-        max-width: 100%; /* A imagem deve se ajustar à largura da tela */
-        height: auto; /* A altura da imagem deve ser ajustada automaticamente */
+    /* Ajuste o tamanho da fonte do título para telas pequenas */
+    .image h1 {
+        font-size: 20px;
     }
 }
-

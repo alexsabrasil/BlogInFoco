@@ -3,9 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* CSS personalizado para os efeitos de hover e mudança de cor */
+/* Efeitos de hover e mudança de cor */
 .nav-item.nav-link:hover {
-  color: #ff0000; /* Cor ao passar o mouse (vermelho neste exemplo) */
+  color: #ff0000; 
 }
 
 #about-menu:hover,
@@ -13,7 +13,7 @@ body {
 #portfolio-menu:hover,
 #contact-menu:hover,
 #home-menu:hover {
-  color: #0dc5dd; /* Cor específica para cada item ao passar o mouse */
+  color: #0dc5dd; 
 }
 
 .row {
@@ -40,7 +40,7 @@ header, .navbar {
 }
 
 #logo {
-  width: 150px;
+  width: 80px;
 }
 
 .navbar-brand {
@@ -56,7 +56,7 @@ header, .navbar {
 /*cabeçalho*/
 #navbar-links a {
   color: #FFF;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -68,7 +68,6 @@ header, .navbar {
 }
 
 /* Slider */
-
 .container-fluid {
   padding: 0;
 }
@@ -118,12 +117,24 @@ header, .navbar {
 }
 
 /* Sobre Mim */
-
 #about-area {
   background-color: #F9F9F9;
   
 }
 
+.custom-font-size {
+  font-size: 13px !important;
+}
+
+/* Defina um estilo para os elementos <li> dentro das listas com id "about-list" */
+ul#about-list li {
+  font-size: 12px; 
+}
+
+/* Cartazes  */
+.small-font {
+  font-size: 12px; 
+}
 
 .main-title {
   color: #444;
@@ -148,7 +159,6 @@ header, .navbar {
   font-weight: bold;
 }
 
-
 #about-list {
   list-style: none;
   padding-left: 0;
@@ -162,7 +172,6 @@ header, .navbar {
   color: #65DAF9;
   margin-right: 15px;
 }
-
 
 /* Estilo para os cards */
 h1, p {
@@ -183,11 +192,10 @@ h1, p {
 }
 
 .two-columns li {
-  width: 48%; /* Ajuste a largura conforme necessário */
+  width: 48%; 
   float: left;
-  margin-right: 2%; /* Adicione margem direita para espaçamento entre colunas */
+  margin-right: 2%; 
 }
-
 
 .clear {
   clear: both;
@@ -231,7 +239,6 @@ h1, p {
   font-size: 18px;
   margin: 10px 0;
 }
-
 
 .card-titulo {
   font-size: 30px;
@@ -293,18 +300,16 @@ h1, p {
 }
 
 /* Estilo para os elementos com imagem de fundo */
- 
 .servicos {
-  background-image: url('../img/cidadeparallax.png'); /* Substitua pelo caminho da sua imagem de fundo */
+  background-image: url('../img/cidadeparallax.png'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   padding: 40px 0;
-  text-align: center; /* Centralizar o conteúdo horizontalmente */
+  text-align: center; 
 }
 
 /* Dados */
-
 .circle-box div {
   padding: 0 40px;
 }
@@ -373,10 +378,7 @@ h1, p {
   margin-bottom: 20px;
 }
 
-
-
 /* Portfólio */
-
 .project-box {
   margin-bottom: 30px;
   text-align: center;
@@ -411,7 +413,6 @@ h1, p {
 }
 
 /* News Letter */
-
 #news-area {
   text-align: center;
   background-color: #F9F9F9;
@@ -453,7 +454,6 @@ h1, p {
 }
 
 /* Call To Action */
-
 #call-area {
   background-color: #65DAF9;
   text-transform: uppercase;
@@ -490,7 +490,6 @@ h1, p {
 }
 
 /* Footer */
-
 #contact-area {
   text-align: center;
 }
@@ -540,7 +539,6 @@ h1, p {
 }
 
 /* Copy */
-
 #copy-area {
   background-color: #F1F1F1;
 }
@@ -566,177 +564,58 @@ h1, p {
   color: #3EC1D5;
 }
 
-/* responsive */
-@media(max-width: 768px) {
+/* Adicione uma regra de mídia para telas menores (largura máxima de 768px) */
+@media (max-width: 768px) {
   
-  /* geral */
-  .container {
-    padding: 20px 0;
-  }
-  
-  /* slider */
-  #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: auto;
-  }
-
-  #mainSlider .carousel-caption h2 {
-    font-size: 28px;
-  }
-
-  #mainSlider .carousel-caption p {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-
-  .carousel-caption {
-    left: 10%;
-    right: 10%;
-  }
-  
-  /* about */
-  #about-area img {
-    margin-top: 100px;
-  }
-  
-  /* data */
-  .circle-box div {
-    padding: 0 10px;
-  }
-
-  #data-area p {
-    font-size: 16px;
-  }
-  
-  /* team */
-  .card-title {
+  body {
     font-size: 14px;
   }
 
-  .card-text {
-    font-size: 12px;
-  }
-
-  /* apply */
-  #apply-area .apply-box {
-    padding: 50px 25px;
-  }
-
-  /* news */
-  #news-area p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #email-input {
-    width: 70%;
-  }
-
-  #call-area {
-    margin-top: 30px;
-  }
-
-  #call-area .container {
-    padding: 30px;
-  }
-
-  #call-area p, #call-area #call-btn {
-    font-size: 16px;
-  }
-
-}
-
-
-@media(max-width: 425px) {
-
-  /* slider */
-  #mainSlider {
-    margin-top: 90px;
-  }
-
-  #mainSlider .carousel-caption {
-    top: 5%;
-  }
-
-  #mainSlider .carousel-caption h2 {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-
-  #mainSlider .carousel-caption p {
-    display: none;
-  }
-
-  .carousel-caption .main-btn {
-    
-    font-size: 14px;
-  }
-
-  /* about */
-  .main-title {
-    font-size: 30px;
-  }
-
-  #about-area img {
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-
-  /* data */
-  .circle-box {
-    width: 50%;
-  }
-
-  #team-area .col-md-3 {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-
-  /* apply */
-  #apply-area {
-    height: auto;
-  }
-
-  #company-img {
-    display: none;
-  }
-
-  /* filter */
-  #portfolio-area .filter-btn {
-    margin-bottom: 20px;
-  }
-
-  .project-box {
-    width: 50%;
-  }
-
-  /* news */
-  #news-area .main-title {
+  
+  h1 {
     font-size: 24px;
   }
 
-  #news-area p {
+  
+  p {
     font-size: 16px;
   }
 
-  #email-input {
-    width: 80%;
+  
+  .navbar-nav .nav-link {
+    font-size: 16px;
   }
 
-  #call-area p, #call-area #call-btn {
+ 
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  
+  .main-btn {
+    font-size: 16px;
+  }
+}
+
+/* Adicione outra regra de mídia para telas muito pequenas (largura máxima de 425px) */
+@media (max-width: 425px) {
+  
+  body {
+    font-size: 12px;
+  }
+
+  
+  h1 {
+    font-size: 20px;
+  }
+
+  
+  #mainSlider .carousel-caption p {
+    display: none;
+  }
+
+  
+  .main-btn {
     font-size: 14px;
-    letter-spacing: 0;
   }
-
-  #call-area p, #call-area #call-btn {
-    margin: 0;
-    width: 50%;
-  }
-
-  /* contact */
-  .contact-box {
-    border: none;
-    margin-bottom: 0;
-  }
-
 }
